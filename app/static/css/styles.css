@@ -1,0 +1,43 @@
+body{
+  background-image: url(https://images.pexels.com/photos/459688/pexels-phocompress&cs=tinysrgb&dpr=1&w=500);
+    background-size:contain;
+  }
+ .container 
+    {
+      background-color: rgb(240, 238, 210);
+      /* font-family: serif; */
+      font-family: 'Dancing Script', cursive;
+    }
+.well
+    {font-size:30px;
+    font-weight: 900;
+  }
+.well:hover{background-color: azure;
+    }
+.title {
+      color: blueviolet;
+    }
+ #heading{
+   text-align:center;
+    font-family: monospace;
+    color:rgb(49, 75, 49)
+  }
+    
+#random{
+      border: 2px dotted rgb(98, 153, 16);
+    color:rgb(49, 75, 49);
+    background-color: rgb(209, 209, 187);
+    text-align:center;
+    margin: 30px;
+    }
+    
+    #navbar{
+      background-color:rgb(76, 196, 190);
+    color:black;
+  }
+    
+    button{background-color: rgb(110, 129, 110);
+    color: chartreuse;
+    border-radius: 10px;
+    padding: 8px;
+    width:100px;}
