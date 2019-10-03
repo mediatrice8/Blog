@@ -16,7 +16,7 @@ This is an application that allows users to create an account then create blog p
 * clone the file
 * Unzipped just the file is zip
 * $ python3.6 -m venv virtual (install virtual environment)
-* $ source virtual/bin/activate or virtual/scripts/activat
+* $ source blog/bin/activate or blog/scripts/activate
 * $ python3.6 -m pip install -r requirements.txt (to install all dependencies)
 * $ ./start.sh to run the app
 
