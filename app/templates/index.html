@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+<body>
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  
+
+        <h1 id="heading"> Blog</h1>
+        {% if current_user.is_authenticated %}
+        <div class="well">
+                <a href="{{ url_for('main.create_blogs') }}">Post</a>
+        </div>
+        {% else %}
+        </p>
+        {%endif%}
+        
+<br>
+<br>
+    
+    <div class="well-lg" id="random">
+        <h2>Random Quote</h2> <br>
+        <p>{{quote.quote}}</p>
+        <p>Author: {{quote.author}}</p> 
+    </div>
+    
+        
+
+        
+{% for word in blog %}
+    <h5>{{word.user.username}}</h5>
+    <h3>{{word.title}}</h3>
+    <p><strong>{{word.blog}}</strong></p>
+    <div class="well-sm">
+    <a href="/comment/new/{{word.id}}"><button id="but"><img src="https://pngimage.net/wp-content/uploads/2018/05/comment-logo-png-4.png"height=50><br>Comments</button></a><br>
+    {% if current_user.is_authenticated %}
+        <a href="{{url_for('main.delete_blog',id=word.id)}}"><button><img src="https://tweetdelete.net/static/images/bird_bin.png" height=50><br>Delete</button></a>
+        <a href="{{url_for('main.upgrade_blogs',id=word.id)}}"><button><img src="https://img.icons8.com/flat_round/2x/update-left-rotation.png " height=50><br>Upadte</button></a>
+        {% else %}
+        <p> </p>
+    {%endif%}
+   </div>
+
+{% endfor %}
+</div>    
+{% endblock%}
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); 
+    .container-fluid
+    {
+        font-family: 'Dancing Script', cursive;
+
+    }
+</style>
