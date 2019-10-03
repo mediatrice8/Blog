@@ -2,7 +2,7 @@
 ## BLOG POST By Mediatrice Kampire 
 30th september 2019
 ### Description
-This is an application that allows users to create an account then create blog post  so that the owner of blog can update, delete and comment
+This is an application that allows users to create an account then create blog post  so that the owner of blog can update, delete and  the other user can commenting on it
 ## BDD
 * User can login and sign out
 * user can put up the blog 
