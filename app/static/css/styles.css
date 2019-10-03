@@ -1,5 +1,5 @@
 body{
-  background-image: url(https://images.pexels.com/photos/459688/pexels-phocompress&cs=tinysrgb&dpr=1&w=500);
+  background-image: url(https://www.lightwayweb.com/wp-content/uploads/2016/02/custom-design-background.jpg);
     background-size:contain;
   }
  .container 
@@ -7,6 +7,7 @@ body{
       background-color: rgb(240, 238, 210);
       /* font-family: serif; */
       font-family: 'Dancing Script', cursive;
+      font-size: 60%;
     }
 .well
     {font-size:30px;
@@ -31,9 +32,12 @@ body{
     margin: 30px;
     }
     
-    #navbar{
-      background-color:rgb(76, 196, 190);
-    color:black;
+#navbar{
+    background-color:rgb(76, 196, 190);
+  
+
+  
+
   }
     
     button{background-color: rgb(110, 129, 110);
